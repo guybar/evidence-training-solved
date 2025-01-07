@@ -1,4 +1,4 @@
-name: Docker-build-with-evidence
+name: Docker-build-with-evidence-complete
 
 on:
   [workflow_dispatch]
