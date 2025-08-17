@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REPO_NAME: evidence-demo-docker-dev
-      JF_PROJECT: guy
     steps:
 
       - uses: actions/checkout@v4
@@ -22,7 +21,6 @@ jobs:
         env:
           JF_URL: ${{ vars.ARTIFACTORY_URL }}
           JF_ACCESS_TOKEN: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
-          JF_PROJECT: ${JF_PROJECT}
 
       - name: Build Docker image
         run: |
